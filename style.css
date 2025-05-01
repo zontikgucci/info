@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  background-color: rgb(241, 241, 241);
+}
+
+.container {
+  max-width: 920px;
+  margin: auto;
+  padding: 20px 10px;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.info-text {
+  margin-left: auto;
+}
+
+.info-text h1 {
+  margin-bottom: 10px;
+}
+
+.info-text h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.info-text p {
+  color: rgba(0, 0, 0, .6);
+}
+
+.info-text p:nth-child(3){
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 200px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, .2);
+  border-radius: 28px;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+}
+
+
+.social li {
+  margin-right: 20px;
+}
+.social li:last-child {
+  margin-right: 0;
+}
+
+.social li a{
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+.social li a:hover{
+  text-decoration: underline;
+}
+
+.social li a::first-letter{
+  text-transform: uppercase;
+}
+
+.card {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 15px 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+.card  ol {
+  padding-left: 20px;
+}
+
+.card  ol li{
+  margin-bottom: 10px;
+  color: rgb(134, 137, 143);
+}
+
+.card  ol li:last-child{
+  margin: 0;
+}
+
+.card  ul {
+  list-style: none;
+}
+
+.card ul li {
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(134, 137, 143);
+}
+
+.card ul li a {
+  text-decoration: none;
+  color: rgb(134, 137, 143);
+}
+
+.card ul li a:hover {
+  text-decoration: underline;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td:nth-child(2), .table td:nth-child(3) {
+  color: rgb(134, 137, 143);
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form-row .form-group {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.form-row .form-group:last-child {
+  margin: 0;
+}
+
+.form-row div:first-child {
+  margin-right: 20px;
+}
+
+.form label {
+  display: block;
+  font-size: 14px;
+  color: rgb(134, 137, 143);
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-family: inherit;
+  border-style: none none solid;
+  background: transparent;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding: 15px 0px 10px;
+  outline: none;
+}
+
+.btn {
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  cursor: pointer;
+  background: rgb(17, 17, 17);
+  padding: 15px 20px;
+  border-style: none;
+}
+
+.btn:hover {
+  opacity: .8;
+}
+
+.bg-hobbi {
+  background: rgb(229, 255, 231);
+}
+.bg-experience {
+  background: rgb(255, 229, 229);
+}
+.bg-сourses {
+  background: rgb(255, 249, 220);
+}
+
+@media (max-width: 425px) {
+  .table td {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 882px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+}
